@@ -34,6 +34,7 @@
             <a href="#usage">Usage</a>
             <ul>
                 <li><a href="#examples">Examples</a></li>
+                <li><a href="#visualization">Visualization</a></li>
             </ul>
         </li>
         <li><a href="#contributing">Contributing</a></li>
@@ -64,7 +65,7 @@ This project aims to visualize the internal feature maps for any Keras models (T
 pip install -r requirements.txt
 ```
 
-If you are using Anaconda, please check the [corresponding CUDA & cuDNN versions for TF](https://www.tensorflow.org/install/source#tested_build_configurations) and install them:
+If you are using Anaconda, please check the [corresponding CUDA & cuDNN versions for TF](https://www.tensorflow.org/install/source#tested_build_configurations) and install them accordingly:
 ```bash
 conda search cudatoolkit
 conda search cudnn
