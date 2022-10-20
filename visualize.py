@@ -36,6 +36,8 @@ def load_model(model_path):
 
 def visualize(img, model, layer_names, output_path, dpi=600):
     feat_maps = model.predict(img)
+    if not isinstance(feat_maps, list):
+        feat_maps = [feat_maps]
 
     layer_imgs = []
     for feat_map in feat_maps:
@@ -58,7 +60,7 @@ def visualize(img, model, layer_names, output_path, dpi=600):
     n_layers = len(layer_imgs)
     fig, axs = plt.subplots(n_layers, 1)
     for i, (layer_name, layer_img) in enumerate(zip(layer_names, layer_imgs)):
-        ax = axs[i]
+        ax = axs[i] if n_layers > 1 else axs
         ax.imshow(layer_img)
         ax.grid(False)
         ax.axis('off')

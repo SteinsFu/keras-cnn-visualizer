@@ -11,6 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+    <img src="demo/feature_image.jpg" width="1200">
     <h3 align="center">Keras CNN Visualizer</h3>
     <p align="center">
         Tensorflow2 Keras CNN feature maps visualization
@@ -100,6 +101,13 @@ Visualize your own model:
 ```bash
 python visualize.py -m path/to/your_model.h5 -l layer1 layer2 layer3
 ```
+
+### Visualization
+The followings are the examples of `python visualize.py -l block1_conv1 block2_conv1`
+| Input                                         | Visualization                                           |
+|-----------------------------------------------|---------------------------------------------------------|
+| <img src="examples/example1.jpg" width="250"> | <img src="visualization/example1_viz.jpg" width="1000"> |
+| <img src="examples/example2.jpg" width="250"> | <img src="visualization/example2_viz.jpg" width="1000"> |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
